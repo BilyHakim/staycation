@@ -65,5 +65,5 @@ Button.propTypes = {
   isLarge: propTypes.string,
   isBlock: propTypes.string,
   isExternal: propTypes.bool,
-  hasShadow: propTypes.string,
+  hasShadow: propTypes.bool,
 };
