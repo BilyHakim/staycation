@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import propTypes from 'prop-types';
-import { isThisSecond } from 'date-fns';
+// import { isThisSecond } from 'date-fns';
 
 import { InputNumber, InputDate } from 'elements/Form';
 import Button from 'elements/Button';
@@ -64,7 +64,7 @@ export default class BookingForm extends Component {
 
   render() {
     const { data } = this.state;
-    const { itemDetails, startBooking } = this.props;
+    const { itemDetails } = this.props;
 
     return (
       <div className="card bordered" style={{ padding: '60px 80px' }}>
@@ -86,7 +86,7 @@ export default class BookingForm extends Component {
           </span>
         </h6>
 
-        <Button className="btn" hasShadow isPrimary isBlock onClick={startBooking}>
+        <Button className="btn" hasShadow isPrimary isBlock onClick={this.startBooking}>
           Continue to book
         </Button>
       </div>
