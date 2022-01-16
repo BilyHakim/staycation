@@ -52,13 +52,31 @@ export default function Payment(props) {
           <div className="col-5 py-5" style={{ paddingLeft: 80 }}>
             <Fade delay={600}>
               <label htmlFor="proofPayment">Upload Bukti Transfer</label>
-              <InputFile accept="image/*" id="proofPayment" name="proofPayment" value={data.proofPayment} onChange={props.onChange} />
+              <InputFile
+                accept="image/*"
+                id="proofPayment"
+                name="proofPayment"
+                value={data.proofPayment}
+                onChange={props.onChange}
+              />
 
               <label htmlFor="bankName">Asal Bank</label>
-              <InputText id="bankName" name="bankName" type="text" value={data.bankName} onChange={props.onChange} />
+              <InputText
+                id="bankName"
+                name="bankName"
+                type="text"
+                value={data.bankName}
+                onChange={props.onChange}
+              />
 
               <label htmlFor="bankHolder">Nama Pengirim</label>
-              <InputText id="bankHolder" name="bankHolder" type="text" value={data.bankHolder} onChange={props.onChange} />
+              <InputText
+                id="bankHolder"
+                name="bankHolder"
+                type="text"
+                value={data.bankHolder}
+                onChange={props.onChange}
+              />
             </Fade>
           </div>
         </div>
